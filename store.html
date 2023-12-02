@@ -11,12 +11,12 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <header>
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">Black,White, Shades of Gray</span>
+                <span class="site-heading-upper text-primary text-white mb-3">Black,White, Shades of Gray</span>
                 <span class="site-heading-lower">Marketing Hub</span>
             </h1>
         </header>
@@ -30,96 +30,116 @@
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Our Services</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Store</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Let's Work</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+<!--        Get a quote form-->
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
                             <h2 class="section-heading mb-5">
-                                <span class="section-heading-upper">Come On In</span>
-                                <span class="section-heading-lower">We're Open</span>
+                                <span class="section-heading-upper">Let's</span>
+                                <span class="section-heading-lower">Work</span>
                             </h2>
-                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Sunday
-                                    <span class="ms-auto">Closed</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Monday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Tuesday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Wednesday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Thursday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Friday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Saturday
-                                    <span class="ms-auto">9:00 AM to 5:00 PM</span>
-                                </li>
-                            </ul>
-                            <p class="address mb-5">
-                                <em>
-                                    <strong>1116 Orchard Street</strong>
-                                    <br />
-                                    Golden Valley, Minnesota
-                                </em>
-                            </p>
-                            <p class="mb-0">
-                                <small><em>Call Anytime</em></small>
-                                <br />
-                                (317) 585-8468
-                            </p>
+                           <h2>Request a Quote</h2>
+                            <form action="process_forms.php" method="post">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br>
+                                <label for="service">Service:</label>
+                                <select id="service" name="service">
+                                    <option value="Brand Strategy">Brand Strategy</option>
+                                    <option value="Content Creation">Content Creation</option>
+                                    <option value="SEO">Search Engine Optimization (SEO)</option>
+                                    <option value="Social Media Management">Social Media Management</option>
+                                    <option value="Data Analytics">Data Analytics</option>
+                                </select><br>
+                                <label for="time_period">Time Period:</label>
+                                <select id="time_period" name="time_period">
+                                    <option value="Short Term">Short Term</option>
+                                    <option value="Long Term">Long Term</option>
+                                </select><br>
+                                <label for="specify">Specify:</label>
+                                <textarea id="specify" name="specify"></textarea><br>
+                                <button type="submit">Submit</button>
+                            </form>
+<!--                            <p class="address mb-5">-->
+<!--                                <em>-->
+<!--                                    <strong>1116 Orchard Street</strong>-->
+<!--                                    <br />-->
+<!--                                    Golden Valley, Minnesota-->
+<!--                                </em>-->
+<!--                            </p>-->
+<!--                            <p class="mb-0">-->
+<!--                                <small><em>Call Anytime</em></small>-->
+<!--                                <br />-->
+<!--                                (317) 585-8468-->
+<!--                            </p>-->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section about-heading">
-            <div class="container">
-                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
-                <div class="about-heading-content">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
-                            <div class="bg-faded rounded p-5">
-                                <h2 class="section-heading mb-4">
-                                    <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                                    <span class="section-heading-lower">About Our Cafe</span>
-                                </h2>
-                                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                                <p class="mb-0">
-                                    We guarantee that you will fall in
-                                    <em>lust</em>
-                                    with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2023</p></div>
-        </footer>
+<!--        <section class="page-section about-heading">-->
+<!--            <div class="container">-->
+<!--                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />-->
+<!--                <div class="about-heading-content">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-xl-9 col-lg-10 mx-auto">-->
+<!--                            <div class="bg-faded rounded p-5">-->
+<!--                                <h2 class="section-heading mb-4">-->
+<!--                                    <span class="section-heading-upper">Strong Coffee, Strong Roots</span>-->
+<!--                                    <span class="section-heading-lower">About Our Cafe</span>-->
+<!--                                </h2>-->
+<!--                                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>-->
+<!--                                <p class="mb-0">-->
+<!--                                    We guarantee that you will fall in-->
+<!--                                    <em>lust</em>-->
+<!--                                    with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+       <!--footer-->
+<div class="footer-container">
+    <!-- Logo and Portfolio Link -->
+    <div class="footer-logo">
+        <img src="assets/img/Tr%20-%20Primary%20Logo.png" alt="bwsg Logo">
+    </div>
+<!--    <div class="footer-links">-->
+<!--        &lt;!&ndash; link to portfolio &ndash;&gt;-->
+<!--        <a href="https://www.canva.com/design/DAFdqLvMSlw/06J1326s6txn9xh-bL67_Q/edit">Portfolio</a>-->
+<!--    </div>-->
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: bwsg@gmail.com</p>
+        <p>Phone: +254113368999</p>
+    </div>
+
+    <!-- Social Media-->
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="https://instagram.com/blackwhite_shadesofgray?utm_source=qr&igshid=NGExMmI2YTkyZg==" target="_blank">Instagram</a></li>
+            <li><a href="http://tiktok.com/@blackwhite_shadesofgray" target="_blank">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/100032158/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BwjbUEqhrRD2Fz0PjUxBMGw%3D%3D" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
+
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>
